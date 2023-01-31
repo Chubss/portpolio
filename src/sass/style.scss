@@ -1,7 +1,9 @@
 @import "base/mixins";
 @import "base/variables";
+@import "libs/fonts";
 
 * {
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
