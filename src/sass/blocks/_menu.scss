@@ -23,23 +23,95 @@
 }
 
 .menu {
-    &__block {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+    &.active{
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: all .6s;
+    }
 
+    &__block {
+        z-index: 10;
+        position: relative;
+        left: -100%;
+        width: 345px;
+        height: 100%;
+        background-color: $orange;
+        padding-top: 140px;
+        padding-left: 40px;
+        transition: all .6s;
+        &.active{
+            left: 0%;
+            transition: all .6s;
+
+        }
     }
     &__close {
-
+        position: absolute;
+        top: 24px;
+        right: 25px;
+        cursor: pointer;
     }
     &__list {
-
+        list-style-type: none;
+        padding-left: 35px;
     }
     &__link {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000000;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -35px;
+            transition: all .6s;
 
+        }
+        &:hover{
+            &::before{
+                background-color: #fff;
+            }
+        }
+        a{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
     &__social {
-
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
     }
     &__overlay {
-        
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: .75;
     }
 }
 
