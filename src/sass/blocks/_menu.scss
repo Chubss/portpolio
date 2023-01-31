@@ -1,0 +1,45 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    span{
+        display: block;
+        height: 3px;
+        width: 30px;
+        background-color:#151812;
+    }
+    span.long{
+        width: 36px;
+
+    }
+
+}
+
+.menu {
+    &__block {
+
+    }
+    &__close {
+
+    }
+    &__list {
+
+    }
+    &__link {
+
+    }
+    &__social {
+
+    }
+    &__overlay {
+        
+    }
+}
+
