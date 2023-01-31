@@ -1,5 +1,5 @@
-@import "base/mixins";
 @import "base/variables";
+@import "base/mixins";
 @import "libs/fonts";
 
 * {
@@ -8,3 +8,13 @@
     margin: 0;
     padding: 0;
 }
+
+[class*="__container"] {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import "blocks/promo";
+@import "blocks/titles";
+@import "blocks/btns";
+@import "blocks/sidepanel";
