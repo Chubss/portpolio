@@ -11,3 +11,16 @@
         left: 0;
     }
 }
+
+@mixin slash {
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 0px;
+        border: 3px solid $orange;
+        border-bottom: none;
+    }
+
+}
