@@ -15,6 +15,11 @@
 
     }
 
+    &_fs20{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
     &_fs16 {
         font-size: 16px;
         line-height: 24px;
@@ -25,5 +30,10 @@
         line-height: 21px;
     }
 
-
+    &_fs12{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+        
 }

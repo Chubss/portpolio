@@ -1,0 +1,111 @@
+.resume {
+    padding-bottom: 120px;
+    // .resume__container
+    // .resume__title
+    &__title {
+        position: relative;
+        text-align: center;
+        @include circle;
+        &:before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    // .resume__subtitle
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include slash_center;
+        
+
+    }
+    // .resume__wrapper
+    &__wrapper {
+        padding: 60px 77px 0 77px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    // .resume__column
+    // .resume__column-title
+    &__column-title {
+        position: relative;
+        padding-left: 35px;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: $orange;
+            border-radius: 100%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+
+        }
+    }
+    // .resume__items
+    &__items {
+        list-style-type: none;
+    }
+    // .resume__item
+    &__item {
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            // display: block;
+            width: 1px;
+            height: calc(100% + 55px);
+            left: 7px;
+            top: -55px;
+            background-color: #000;
+        }
+    }
+    // .resume__item-head
+    &__item-head {
+        margin-top: 45px;
+        padding-left: 100px;
+    }
+    // .resume__item-bodey
+}
+.item-head {
+    // .item-head__img
+    position: relative;
+    &__img {
+        position: absolute;
+        left: 60px;
+        top: 14px;
+        @include circle;
+        &:before{
+            top: -13px;
+            left: -17px;
+        }
+        
+        
+        &::after{
+        content: "";
+        position: absolute;
+        // display: block;
+        width: 35px;
+        height: 1px;
+        left: -52px;
+        top: 5px;
+        background-color: #000;
+        }
+
+    }
+    // .item-head__education
+    &__education {}
+    // .item-head__location
+    &__location {}
+}
+.item-bodey {
+    // .item-bodey__descr
+    &__descr {
+        padding-left: 43px;
+        margin-top: 12px;
+        width: 375px;
+    }
+}
