@@ -18,4 +18,5 @@ const percent = document.querySelectorAll('.scale__pers'),
 
 percent.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
+
 });
